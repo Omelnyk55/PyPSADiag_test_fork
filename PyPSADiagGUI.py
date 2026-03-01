@@ -196,6 +196,7 @@ class PyPSADiagGUI(object):
         self.topRightLayout.addWidget(self.SearchConnectPort)
         self.topRightLayout.addWidget(self.ConnectPort)
         self.topRightLayout.addWidget(self.DisconnectPort)
+        self.topRightLayout.addWidget(self.disableEcoMode)
         self.topRightLayout.addItem(QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding))
         ###################################################
 
@@ -217,7 +218,6 @@ class PyPSADiagGUI(object):
         self.bottomRightLayout.addWidget(self.readEcuFaults)
         self.bottomRightLayout.addWidget(self.clearEcuFaults)
         self.bottomRightLayout.addWidget(self.rebootEcu)
-        self.bottomRightLayout.addWidget(self.disableEcoMode)
         self.bottomRightLayout.addWidget(self.virginWriteZone)
         self.bottomRightLayout.addWidget(self.writeSecureTraceability)
         self.bottomRightLayout.addWidget(self.hideNoResponseZone)
